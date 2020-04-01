@@ -11,7 +11,7 @@ import Foundation
 ///
 /// Default implementations are given for each property.
 /// `NSObject` is extended to have these defaults.
-protocol CombineCompatible {
+public protocol CombineCompatible {
     
     /// Extended type
     associatedtype CombineBase
@@ -47,4 +47,4 @@ extension CombineCompatible {
     }
 }
 
-extension NSObject: CombineCompatible { }
+public extension NSObject: CombineCompatible { }

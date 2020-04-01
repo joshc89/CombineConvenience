@@ -8,10 +8,10 @@
 import Combine
 
 /// Wrapper than can be extended for neat combine extensions to existing `Foundation` and other classes
-struct Combinable<Base> {
+public struct Combinable<Base> {
     
-    let base: Base
-    init(base: Base) {
+    public let base: Base
+    public init(base: Base) {
         self.base = base
     }
 }

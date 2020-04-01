@@ -11,7 +11,7 @@ import Combine
 extension Combinable where Base: NSManagedObjectContext {
     
     /// Publisher that completes after saving, or fails with any error
-    func save() -> Deferred<Future<Void, Error>> {
+    public func save() -> Deferred<Future<Void, Error>> {
         return Deferred {
             Future<Void, Error> { promise in
                 guard self.base.hasChanges == true else {
