@@ -47,4 +47,4 @@ extension CombineCompatible {
     }
 }
 
-public extension NSObject: CombineCompatible { }
+extension NSObject: CombineCompatible { }
